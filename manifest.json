@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Paintsville ISD Bell - Dev",
+    "version": "1.0",
+    "description": "Get notifications for when it's time to change class.",
+    "permissions": [
+        "notifications"
+    ],
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": true
+    },
+    "browser_action" : {
+        "default_icon" : "images/icon.png",
+        "default_popup" : "html/popup.html"
+    },
+    "icons": {
+        "16": "images/icon.png",
+        "32": "images/icon.png",
+        "48": "images/icon.png",
+        "128":"images/icon.png"
+    },
+    "content_security_policy": "script-src 'self' https://pisd.glitch.me https://cdn.jsdelivr.net https://cdn.rawgit.com https://kit.fontawesome.com https://*.googleapis.com; object-src 'self'"
+}
